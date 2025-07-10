@@ -127,7 +127,7 @@ const About = () => {
   
   return (
     <div className='h-full w-full flex flex-col gap-10 sm:gap-16 md:gap-20 lg:gap-32 xl:gap-40 px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16 2xl:px-20 py-6 sm:py-8 md:py-10'>
-      <div className="w-full flex md:flex-row flex-col justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-15">
+      <div className="w-full   border-white md:px-10 lg:px-20 flex md:flex-row flex-col justify-center gap-8 sm:gap-10 md:gap-12 lg:gap-15">
         <motion.div 
           className='md:w-1/2 w-full flex flex-col gap-4 sm:gap-6 md:gap-8 md:items-start items-center'
           initial="hidden"
