@@ -15,7 +15,7 @@ const Card = ({project}) => {
           viewport={{
             once:true
           }}
-        className='card w-full aspect-square rounded-3xl delay-300 duration-500 ease-in-out transition-all hover:scale-[0.98] p-4 sm:p-5 md:p-2 relative overflow-hidden group bg-zinc-900 shadow-xl/40 shadow-[#494747] hover:shadow-xl hover:shadow-black/70'>
+        className='card w-full aspect-square rounded-3xl delay-300 duration-500 ease-in-out transition-all hover:scale-[0.98] p-4 sm:p-5 md:p-2 relative overflow-hidden group bg-zinc-900 shadow-xl/40 shadow-[#494747] hover:shadow-xl hover:shadow-black/70 py-6'>
                     {/* Background with parallax effect on hover */}
             <div
              style={{ backgroundImage: `url('${bgUrl}')` }}
