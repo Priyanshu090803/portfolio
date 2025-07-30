@@ -5,6 +5,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { FaSquareXTwitter } from "react-icons/fa6"
 import emailjs from "emailjs-com"
 import { useState } from "react"
+import { toast, ToastContainer } from "react-toastify"
 
 const Contact = () => {
   const [formData,setFormData] =useState({
@@ -15,21 +16,28 @@ const Contact = () => {
  
   const handelSubmit =(e)=>{
       e.preventDefault()
-      
+      if(formData.email.trim().length===0 || formData.message.trim().length===0 ){
+        toast.error("Email and message are required!")
+        return 
+      }
       emailjs.sendForm(
         import.meta.env.VITE_SERVICE_ID,
         import.meta.env.VITE_TEMPLATE_ID,
         e.target,
-        import.meta.env.VITE_PUBLIC_KEY).then((res)=>{
-        alert("Message sent!")
+        import.meta.env.VITE_PUBLIC_KEY).
+        then((res)=>{
+        // alert("Message sent!")
+        toast.success("Message sent!")
         setFormData({name:"",email:"",message:""})
 
       }).catch(()=>{
-        alert("Something went wrong! Please try again")
+        // alert("Something went wrong! Please try again")
+        toast.error("Unexpected error occured!")
       })
   }
   return (
     <div className='h-full w-full flex flex-col p-4 sm:p-6 md:p-10 gap-16 lg:gap-20'>
+      <ToastContainer autoClose={2000}/>
      <motion.h3 
           className='text-4xl xs:text-5xl sm:text-6xl md:text-7xl text-center font-bold uppercase text-transparent bg-clip-text bg-gradient-to-t from-[#4d5776] to-[#d1cfcf]'
           initial="hidden"
