@@ -4,24 +4,23 @@ import { motion } from 'framer-motion'
 import Card from './ui/Card'
 
 const Projects = () => {
-  // const projectData1 = {
-  //   title: "🎬 Moviezz",
-  //   description:"AI-Powered Movie Discovery Platform",
-  //   tech: ["React.js","TMDB API","AI Search","Tailwind CSS","Firebase","Redux","Framer Motion"],
-  //   gitLink:"https://github.com/Priyanshu090803/Moviezzzzz......",
-  //   liveLink:"https://moviezzzzz-25y6.vercel.app/",
-  //   bgUrl:"https://img.freepik.com/free-photo/view-3d-cinema-elements_23-2150720820.jpg",
-  //   from:"#1d9679",
-  //   to:"#111"
-  // };
-
   const projectData1 = {
-    title: "🎬 Cracked Media",
-    description:"AI-Powered platform where you can edit your images and compress your videos",
-    tech: ["Next.js","Neon DB","Motion","Tailwind CSS","Prisma","Cloudinary"],
-    gitLink:"https://github.com/Priyanshu090803/cracked-media",
-    liveLink:"https://cracked-media-1.vercel.app/home",
+    title: "🎬 Moviezz",
+    description:"AI-Powered Movie Discovery Platform",
+    tech: ["React.js","TMDB API","AI Search","Tailwind CSS","Firebase","Redux","Framer Motion"],
+    gitLink:"https://github.com/Priyanshu090803/Moviezzzzz......",
+    liveLink:"https://moviezzzzz-25y6.vercel.app/",
     bgUrl:"https://img.freepik.com/free-photo/view-3d-cinema-elements_23-2150720820.jpg",
+    from:"#1d9679",
+    to:"#899cb2"
+  };
+
+  const projectData6 = {
+    title: "Octoreal",
+    description:"A Web development agency",
+    tech: ["Next.js","Tailwind CSS","Cloudinary","TypeScript","Framer Motion"],
+    liveLink:"https://octoreal.com/",
+    bgUrl:"https://wallpapers.com/images/hd/dark-purple-and-black-plain-75znhgkjjxu552fr.jpg",
     from:"#111",
     to:"#f0f0f0"
   };
@@ -69,7 +68,7 @@ const Projects = () => {
     to:"#fb7190"
   };
 
-  const projectsArray = [projectData1, projectData4, projectData5, projectData2, projectData3];
+  const projectsArray = [projectData6,projectData1, projectData4, projectData5, projectData2, projectData3];
 
   // Container animation variants
   const containerVariants = {

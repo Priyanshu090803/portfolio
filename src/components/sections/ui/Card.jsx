@@ -69,7 +69,8 @@ const Card = ({project}) => {
    Live Demo
   </motion.a>
         }
-         <motion.a
+         {gitLink &&
+          <motion.a
             href={gitLink}
               target='_blank'
          rel='noopener noreferrer'
@@ -77,7 +78,7 @@ const Card = ({project}) => {
              whileHover={{scale:0.9,transition:{ease:"linear"}}}
              className='cursor-pointer text-sm sm:text-base border text-center bg-gradient-to-t from-[#ffffff] to-[#c3c0c0] text-[#111] shadow-lg/30 shadow-[#c8c6c6] font-medium py-2 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg border-[#bcb7b7] will-change-transform'>
 GitHub
-  </motion.a>
+  </motion.a>}
               </div>
               </div>
                 
