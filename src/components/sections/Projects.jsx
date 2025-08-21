@@ -5,13 +5,13 @@ import Card from './ui/Card'
 
 const Projects = () => {
   const projectData1 = {
-    title: "🎬 Moviezz",
-    description:"AI-Powered Movie Discovery Platform",
-    tech: ["React.js","TMDB API","AI Search","Tailwind CSS","Firebase","Redux","Framer Motion"],
-    gitLink:"https://github.com/Priyanshu090803/Moviezzzzz......",
-    liveLink:"https://moviezzzzz-25y6.vercel.app/",
+      title: "🎬 Cracked Media",
+    description:"AI-Powered platform where you can edit your images and compress your videos",
+    tech: ["Next.js","Neon DB","Motion","Tailwind CSS","Prisma","Cloudinary"],
+    gitLink:"https://github.com/Priyanshu090803/cracked-media",
+    liveLink:"https://cracked-media-1.vercel.app/home",
     bgUrl:"https://img.freepik.com/free-photo/view-3d-cinema-elements_23-2150720820.jpg",
-    from:"#1d9679",
+      from:"#1d9679",
     to:"#899cb2"
   };
 
