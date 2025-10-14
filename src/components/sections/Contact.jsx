@@ -1,6 +1,6 @@
  
 
-import { motion } from "framer-motion"
+import { motion } from "motion/react"
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa"
 import { FaSquareXTwitter } from "react-icons/fa6"
 import emailjs from "emailjs-com"

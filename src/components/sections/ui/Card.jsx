@@ -4,6 +4,8 @@ import { motion } from "motion/react"
 const Card = ({project}) => {
   const {title,description,tech,gitLink,bgUrl,from,to} = project
   const liveLink = project?.liveLink
+  const link1 = project?.link1
+  const link2 = project?.link2
   
   return (
       <motion.div
@@ -58,7 +60,7 @@ const Card = ({project}) => {
             {/* CTA Buttons */}
             <div className='flex gap-3 sm:gap-4 w-full justify-center my-2 sm:my-4'>
           {
-     liveLink&&
+     liveLink && !link1 && !link2 &&
     <motion.a
             href={liveLink}
                target='_blank'
@@ -66,7 +68,18 @@ const Card = ({project}) => {
              initial={{scale:1}}
              whileHover={{scale:0.9,transition:{ease:"linear"}}}
                     className='cursor-pointer text-[#d1d0d0] text-sm sm:text-base text-center py-2 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg bg-gradient-to-t border border-[#323232] font-medium from-[#3b3b3b] to-[#080808] shadow-lg/30 shadow-[#737373] will-change-transform'>
-   Live Demo
+  Live Demo
+  </motion.a>
+        }
+        {link1 &&
+          <motion.a
+            href={link1}
+              target='_blank'
+         rel='noopener noreferrer'
+             initial={{scale:1}}
+             whileHover={{scale:0.9,transition:{ease:"linear"}}}
+             className='cursor-pointer text-[#d1d0d0] text-sm sm:text-base text-center py-2 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg bg-gradient-to-t border border-[#323232] font-medium from-[#3b3b3b] to-[#080808] shadow-lg/30 shadow-[#737373] will-change-transform'>
+Live Demo 1
   </motion.a>
         }
          {gitLink &&
@@ -79,6 +92,17 @@ const Card = ({project}) => {
              className='cursor-pointer text-sm sm:text-base border text-center bg-gradient-to-t from-[#ffffff] to-[#c3c0c0] text-[#111] shadow-lg/30 shadow-[#c8c6c6] font-medium py-2 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg border-[#bcb7b7] will-change-transform'>
 GitHub
   </motion.a>}
+        {link2 &&
+          <motion.a
+            href={link2}
+              target='_blank'
+         rel='noopener noreferrer'
+             initial={{scale:1}}
+             whileHover={{scale:0.9,transition:{ease:"linear"}}}
+             className='cursor-pointer text-[#d1d0d0] text-sm sm:text-base text-center py-2 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg bg-gradient-to-t border border-[#323232] font-medium from-[#3b3b3b] to-[#080808] shadow-lg/30 shadow-[#737373] will-change-transform'>
+Live Demo 2
+  </motion.a>
+        }
               </div>
               </div>
                 
