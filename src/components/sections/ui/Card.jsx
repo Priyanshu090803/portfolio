@@ -78,7 +78,7 @@ const Card = ({project}) => {
          rel='noopener noreferrer'
              initial={{scale:1}}
              whileHover={{scale:0.9,transition:{ease:"linear"}}}
-             className='cursor-pointer text-[#d1d0d0] text-sm sm:text-base text-center py-2 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg bg-gradient-to-t border border-[#323232] font-medium from-[#3b3b3b] to-[#080808] shadow-lg/30 shadow-[#737373] will-change-transform'>
+             className='cursor-pointer text-[#d1d0d0] text-xs sm:text-sm text-center py-2.5 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg bg-gradient-to-t border border-[#323232] font-medium from-[#3b3b3b] to-[#080808] shadow-lg/30 shadow-[#737373] will-change-transform'>
 Live Demo 1
   </motion.a>
         }
@@ -99,7 +99,7 @@ GitHub
          rel='noopener noreferrer'
              initial={{scale:1}}
              whileHover={{scale:0.9,transition:{ease:"linear"}}}
-             className='cursor-pointer text-[#d1d0d0] text-sm sm:text-base text-center py-2 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg bg-gradient-to-t border border-[#323232] font-medium from-[#3b3b3b] to-[#080808] shadow-lg/30 shadow-[#737373] will-change-transform'>
+             className='cursor-pointer text-[#d1d0d0] text-xs sm:text-sm text-center py-2.5 px-1 sm:px-3 w-20 sm:w-24 md:w-30 rounded-lg bg-gradient-to-t border border-[#323232] font-medium from-[#3b3b3b] to-[#080808] shadow-lg/30 shadow-[#737373] will-change-transform'>
 Live Demo 2
   </motion.a>
         }
