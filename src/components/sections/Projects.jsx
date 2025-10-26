@@ -34,7 +34,7 @@ const Projects = () => {
     bgUrl:"https://images.unsplash.com/photo-1522312346375-d1a52e2b99b3?auto=format&fit=crop&w=1200&q=60",
     from:"#8a6d3b",
     to:"#f5e6c5"
-  };
+  };  
   const projectData2 = {
     title: "⚡ Enpal Dashboard",
     description:"Real-world solar data via NREL API with a custom backend",
